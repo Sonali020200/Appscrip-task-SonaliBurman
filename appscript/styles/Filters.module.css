@@ -1,0 +1,16 @@
+.filters {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+  }
+  
+  .filterGroup {
+    margin-bottom: 1rem;
+  }
+  
+  .option {
+    display: block;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  

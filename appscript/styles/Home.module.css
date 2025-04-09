@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  @media screen and (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+  }
+  

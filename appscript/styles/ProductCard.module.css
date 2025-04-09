@@ -1,0 +1,27 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .price {
+    color: #b12704;
+    font-weight: bold;
+  }
+  

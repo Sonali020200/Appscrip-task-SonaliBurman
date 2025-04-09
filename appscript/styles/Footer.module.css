@@ -1,0 +1,39 @@
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 250px;
+  }
+  
+  .newsletter button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .bottom {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .bottom div {
+    margin: 1rem;
+  }
+  
+  .bottom ul {
+    list-style: none;
+    padding: 0;
+  }
+  
