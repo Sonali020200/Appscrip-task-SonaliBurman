@@ -3,8 +3,6 @@ import styles from "../styles/Filters.module.css";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import ProductCard from "./ProductCard";
 
-
-
 const Filters = () => {
   const [showFilters, setShowFilters] = useState(false);
   const [products, setProducts] = useState([]);
@@ -56,19 +54,20 @@ const Filters = () => {
 
   return (
     <div className={styles.pageWrapper}>
-      {/* Hero Section */}
       <section className={styles.heroSection}>
         <h1>DISCOVER OUR PRODUCTS</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Armet est posuere rhoncus scelerisque.
-          Dolor integer scelerisque nibh amet mi ut elementum dolor.
+          Lorem ipsum dolor sit amet consectetur. Armet est posuere rhoncus
+          scelerisque. Dolor integer scelerisque nibh amet mi ut elementum
+          dolor.
         </p>
       </section>
 
-      {/* Controls */}
       <div className={styles.controls}>
         <div className={styles.leftControls}>
-          <span className={styles.itemCount}>{filteredAndSortedProducts.length} ITEMS</span>
+          <span className={styles.itemCount}>
+            {filteredAndSortedProducts.length} ITEMS
+          </span>
           <button className={styles.filterToggle} onClick={toggleFilters}>
             <FaChevronRight className={showFilters ? styles.rotate : ""} />
             {showFilters ? " HIDE FILTER" : " SHOW FILTER"}
@@ -90,26 +89,38 @@ const Filters = () => {
         </div>
       </div>
 
-      {/* Filter and Product Grid */}
       <div className={styles.contentArea}>
-        {/* Filters */}
-        <aside className={`${styles.filterSection} ${showFilters ? styles.showFilter : ""}`}>
+        <aside
+          className={`${styles.filterSection} ${
+            showFilters ? styles.showFilter : ""
+          }`}
+        >
           <p className={styles.filterTitle}>CUSTOMIZBLE</p>
 
           {/* Category Filter */}
           <div className={styles.dropdown}>
-            <div className={styles.dropdownHeader} onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}>
+            <div
+              className={styles.dropdownHeader}
+              onClick={() => setShowCategoryDropdown(!showCategoryDropdown)}
+            >
               Category <FaChevronDown />
             </div>
             {showCategoryDropdown && (
               <div className={styles.dropdownContent}>
-                {["men's clothing", "women's clothing", "jewelery", "electronics"].map((cat) => (
+                {[
+                  "men's clothing",
+                  "women's clothing",
+                  "jewelery",
+                  "electronics",
+                ].map((cat) => (
                   <label key={cat}>
                     <input
                       type="checkbox"
                       checked={selectedCategory === cat}
                       onChange={() =>
-                        setSelectedCategory(selectedCategory === cat ? null : cat)
+                        setSelectedCategory(
+                          selectedCategory === cat ? null : cat
+                        )
                       }
                     />
                     <span>{cat.charAt(0).toUpperCase() + cat.slice(1)}</span>
@@ -121,7 +132,10 @@ const Filters = () => {
 
           {/* Rating Filter */}
           <div className={styles.dropdown}>
-            <div className={styles.dropdownHeader} onClick={() => setShowRatingDropdown(!showRatingDropdown)}>
+            <div
+              className={styles.dropdownHeader}
+              onClick={() => setShowRatingDropdown(!showRatingDropdown)}
+            >
               Rating <FaChevronDown />
             </div>
             {showRatingDropdown && (
@@ -144,7 +158,10 @@ const Filters = () => {
 
           {/* Review Count Filter */}
           <div className={styles.dropdown}>
-            <div className={styles.dropdownHeader} onClick={() => setShowCountDropdown(!showCountDropdown)}>
+            <div
+              className={styles.dropdownHeader}
+              onClick={() => setShowCountDropdown(!showCountDropdown)}
+            >
               Minimum Reviews <FaChevronDown />
             </div>
             {showCountDropdown && (
@@ -155,7 +172,9 @@ const Filters = () => {
                       type="checkbox"
                       checked={selectedCount === count}
                       onChange={() =>
-                        setSelectedCount(selectedCount === count ? null : count)
+                        setSelectedCount(
+                          selectedCount === count ? null : count
+                        )
                       }
                     />
                     {count}+ reviews
