@@ -14,7 +14,7 @@
 .rightIcons {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .center {
@@ -22,9 +22,9 @@
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-weight:bolder;
+  font-size: 150%;
+  margin-bottom: 2rem;
 }
 
 .nav {
@@ -38,4 +38,48 @@
 .nav a {
   text-decoration: none;
   color: black;
+}
+
+/* Hide hamburger by default */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items:baseline;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .mobileNavOpen {
+    display: flex;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftIcons,
+  .rightIcons {
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1.5%;
+  }
 }
