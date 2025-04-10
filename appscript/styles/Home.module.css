@@ -1,23 +1,67 @@
+/* styles/Home.module.css */
+
 .main {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem;
-    gap: 2rem;
-  }
-  
-  .content {
-    flex: 1;
-  }
-  
-  .grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  }
-  
-  @media screen and (max-width: 768px) {
-    .main {
-      flex-direction: column;
-    }
-  }
-  
+  padding: 2rem 4rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.heroSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heroSection h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.heroSection p {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.itemCountWrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.itemCount {
+  font-weight: 500;
+}
+
+.hideFilter {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.pageContent {
+  display: flex;
+  gap: 2rem;
+}
+
+.gridWrapper {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}

@@ -1,16 +1,184 @@
-.filters {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    background: #f9f9f9;
-  }
+.pageWrapper {
+  padding: 40px 80px;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.heroSection {
+  height: 10vh; 
+  padding: 0 1rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   
-  .filterGroup {
-    margin-bottom: 1rem;
+}
+
+.heroSection h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.heroSection p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #555;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.leftControls {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.itemCount {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filterToggle {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #222;
+  font-size: 14px;
+  gap: 8px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  appearance: none;
+  width: 200px;
+  font-weight: bold;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+}
+
+.contentArea {
+  display: flex;
+  gap: 40px;
+}
+
+.filterSection {
+  width: 250px;
+  display: none;
+  flex-shrink: 0;
+}
+
+.showFilter {
+  display: block;
+}
+
+.filterTitle {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdownHeader {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.dropdownContent {
+  padding-left: 10px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dropdownContent label {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.productSection {
+  flex: 1;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.loading,
+.noProducts {
+  font-size: 16px;
+  text-align: center;
+  color: #888;
+  padding: 40px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .pageWrapper {
+    padding: 20px 30px;
   }
-  
-  .option {
-    display: block;
-    margin-left: 1rem;
-    cursor: pointer;
+
+  .contentArea {
+    flex-direction: column;
   }
-  
+
+  .filterSection {
+    width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .sortSelect {
+    width: 100%;
+  }
+}

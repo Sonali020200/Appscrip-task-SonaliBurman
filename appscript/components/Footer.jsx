@@ -13,12 +13,12 @@ export default function Footer() {
         <div>
           <p>CONTACT US</p>
           <p>+44 221 133 5360</p>
-          <p>customercare@mettamuse.com</p>
+          <p>customercare@appscript.com</p>
           <p>CURRENCY - USD $</p>
         </div>
 
         <div>
-          <p>mettà muse</p>
+          <p>appscript</p>
           <ul>
             <li>About Us</li>
             <li>Stories</li>
