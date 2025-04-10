@@ -1,39 +1,132 @@
 .footer {
-    background: #111;
-    color: #fff;
-    padding: 2rem;
-  }
-  
-  .newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  
-  .newsletter input {
-    margin: 0.5rem 0;
-    padding: 0.5rem;
-    width: 250px;
-  }
-  
-  .newsletter button {
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-  }
-  
-  .bottom {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .bottom div {
-    margin: 1rem;
-  }
-  
-  .bottom ul {
-    list-style: none;
-    padding: 0;
-  }
-  
+  background: #000;
+  color: #fff;
+  padding: 2.5rem;
+  font-family: sans-serif;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.leftTop {
+  flex: 1;
+  min-width: 280px;
+}
+
+.rightTop {
+  flex: 1;
+  min-width: 280px;
+}
+
+.newsHeading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.subText {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.subscribeWrapper {
+  display: flex;
+  max-width: 400px;
+}
+
+.subscribeWrapper input {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.subscribeWrapper button {
+  padding: 0 1rem;
+  background: transparent;
+  border: 1px solid #999;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sectionHeading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.currencyNote {
+  font-size: 0.75rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+}
+
+.divider {
+  border-color: #333;
+  margin: 2rem 0;
+}
+
+.bottomLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bottomLinks div {
+  min-width: 200px;
+}
+
+.bottomHeading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.bottomLinks ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.bottomLinks ul li {
+  margin-bottom: 0.5rem;
+}
+
+.socialIcons {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.acceptsHeading {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.paymentIcons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paymentIcons img {
+  height: 30px;
+  background: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #aaa;
+}
