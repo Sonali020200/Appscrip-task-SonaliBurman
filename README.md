@@ -2,13 +2,12 @@
 
 A clean, responsive product listing UI built with **Next.js**, **React**, and **plain CSS**. This project fetches products from the [FakeStore API](https://fakestoreapi.com/) and features filtering, sorting, wishlist toggle, and hover effects.
 
----
 
 ## Live link
 
 https://appscrip-task-sonali-burman-oiso.vercel.app/
 
----
+--
 
 ## 🔧 Tech Stack
 
@@ -17,7 +16,7 @@ https://appscrip-task-sonali-burman-oiso.vercel.app/
 - **Icons**: react-icons
 - **Data**: [FakeStore API](https://fakestoreapi.com/)
 
----
+--
 
 ## ✨ Features
 
@@ -34,7 +33,7 @@ https://appscrip-task-sonali-burman-oiso.vercel.app/
 - 🧼 **Clean UI** – Clean and minimal look 
 
 
----
+--
 
 ## 🚀 Getting Started
 
@@ -65,6 +64,6 @@ yarn dev
 The app will be running at http://localhost:3000
 
 ---
----
+
 
 
