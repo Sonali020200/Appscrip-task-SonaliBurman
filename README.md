@@ -3,11 +3,14 @@
 A clean, responsive product listing UI built with **Next.js**, **React**, and **plain CSS**. This project fetches products from the [FakeStore API](https://fakestoreapi.com/) and features filtering, sorting, wishlist toggle, and hover effects.
 
 
-## Live link
+## Live Link
 
 https://appscrip-task-sonali-burman-oiso.vercel.app/
 
 
+## Video Explanation
+
+https://drive.google.com/file/d/1xvqYxAMCECDL7FW_old-ZCmzJh6rYCjK/view?usp=sharing
 
 ## 🔧 Tech Stack
 
