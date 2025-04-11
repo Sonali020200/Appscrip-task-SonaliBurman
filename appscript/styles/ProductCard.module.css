@@ -3,12 +3,15 @@
   padding: 1rem;
   background-color: #fff;
   border: 1px solid #eee;
-  transition: box-shadow 0.2s ease;
+  transition: all 0.3s ease;
   text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .productCard:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
 }
 
 .productImage {
@@ -16,6 +19,11 @@
   height: auto;
   object-fit: contain;
   margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.05);
 }
 
 .productName {
@@ -31,14 +39,6 @@
   margin: 0.25rem 0;
 }
 
-.wishlist {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-}
-
 .ratingBox {
   display: flex;
   justify-content: center;
@@ -50,11 +50,25 @@
 }
 
 .stars {
-  color: #f5a623; 
+  color: #f5a623;
   font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .reviewCount {
   color: #777;
   font-size: 0.8rem;
+}
+
+.wishlist {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease;
+}
+
+.wishlist:hover {
+  transform: scale(1.2);
 }
