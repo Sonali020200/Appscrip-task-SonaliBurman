@@ -14,17 +14,19 @@
 .rightIcons {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .center {
   text-align: center;
+  margin-left: 5%;
 }
 
 .logo {
   font-weight:bolder;
   font-size: 150%;
   margin-bottom: 2rem;
+
 }
 
 .nav {
