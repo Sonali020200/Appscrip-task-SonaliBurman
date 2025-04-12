@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.topSection}>
         <div className={styles.leftTop}>
           <p className={styles.newsHeading}>BE THE FIRST TO KNOW</p>
-          <p className={styles.subText}>Sign up for updates from appscript.</p>
+          <p className={styles.subText}>Sign up for updates from metta muse.</p>
           <div className={styles.subscribeWrapper}>
             <input type="email" placeholder="Enter your e-mail..." />
             <button>SUBSCRIBE</button>
@@ -18,7 +18,7 @@ export default function Footer() {
         <div className={styles.rightTop}>
           <p className={styles.sectionHeading}>CONTACT US</p>
           <p>+44 221 133 5360</p>
-          <p>customercare@appscript.com</p>
+          <p>customercare@mettamuse.com</p>
           <div className={styles.currency}>
             <p className={styles.sectionHeading}>CURRENCY</p>
             <p>🇺🇸 • USD</p>
