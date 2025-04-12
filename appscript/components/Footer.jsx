@@ -34,7 +34,7 @@ export default function Footer() {
       {/* Bottom Grid Links */}
       <div className={styles.bottomLinks}>
         <div>
-          <p className={styles.bottomHeading}>appscript</p>
+          <p className={styles.bottomHeading}>metta muse</p>
           <ul>
             <li>About Us</li>
             <li>Stories</li>
@@ -64,7 +64,7 @@ export default function Footer() {
       <Instagram size={20} strokeWidth={1.5} />
       <Linkedin size={20} strokeWidth={1.5} />
     </div>
-          <p className={styles.acceptsHeading}>appscript ACCEPTS</p>
+          <p className={styles.acceptsHeading}>metta muse ACCEPTS</p>
           <div className={styles.paymentIcons}>
             <img src="/images/Group 136188.png" alt="Google Pay" />
             <img src="/images/Group 136190.png" alt="Mastercard" />
@@ -77,7 +77,7 @@ export default function Footer() {
       </div>
 
       <p className={styles.copyright}>
-        Copyright © 2023 appscript. All rights reserved.
+        Copyright © 2023 mettamuse. All rights reserved.
       </p>
     </footer>
   );
